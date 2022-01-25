@@ -40,8 +40,6 @@ LETTERS_TO_MC = {
 }
 
 def translate(words):
-    # return " ".join(LETTERS_TO_MC[char] for char in words.upper())
-    pass
+    return " ".join(LETTERS_TO_MC[char] for char in words.upper())
 def decode(message):
-    pass
-    # return "".join(list(LETTERS_TO_MC.keys())[list(LETTERS_TO_MC.values()).index(char)] for char in message.split(' '))
+    return "".join(list(LETTERS_TO_MC.keys())[list(LETTERS_TO_MC.values()).index(char)] for char in message.split(' '))
